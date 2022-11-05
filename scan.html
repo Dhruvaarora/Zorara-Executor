@@ -1,0 +1,101 @@
+<!Doctype html>
+<head> 
+    <title>SCAN</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel = "icon" href = "schedule.png" type = "image/x-icon">
+</head>
+
+<body  bgcolor="  #F7EDE2">
+    
+    <!-- implementation -->
+    <div class="container">
+        <button class="hmbtn" onclick="window.location.href='main.html';">Home</button>
+        <h1 style="margin: 0px;"><center>SCAN Scheduling</center></h1>
+        </div>
+
+
+        <div id="alert-wrapper"></div>
+
+        <div class="running-algo">
+
+            <form>
+                <div id="controls">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"> No. Of Requests</label><br>
+                        <input type="number" class="form-control" id="requests">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"> Total Tracks</label><br>
+                        <input type="number" class="form-control" id="max-track" placeholder="Maximum Track Number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"> Head position</label><br>
+                        <input type="number" class="form-control" id="head" data-bs-toggle="popover"
+                            data-bs-trigger="hover" title="important!"
+                            data-bs-content="The value of head position should not lie outside the range track nunber.">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="inputState" class="form-label">Choose Direction</label><br>
+                        <select id="direction" class="form-select form-control" style="width: 150px;">
+                            <option value="left" class="select">Left</option>
+                            <option value="right" class="select">Right</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label"> Tracks</label><br>
+                        <input type="text" placeholder="Track requests" class="form-control" id="tracks"
+                            data-bs-toggle="popover" data-bs-trigger="hover" title="important!"
+                            data-bs-content="Make sure that the values of the tracks are either space separated or comma separated. There should not be any comma before the first track value and after the last track value. Any track request should not exceed the maximum possible track number.">
+                    </div>
+
+                    <div class="algo-buttons">
+                        <input id="reset-button" style="cursor:pointer; width:50px;" type="reset" class="btn btn-dark form-control last_button"
+                            style="margin: 10px;">
+                        <button id="run" type="button" class="btn btn-dark last_button disabled"
+                            data-bs-toggle="popover" data-bs-trigger="hover" title="Warning!"
+                            data-bs-content="None of the fields above should be empty. They should not contain any alphabetic or special character!"
+                            style="margin: 20px; cursor:pointer; width:50px;">Run</button>
+                        <!-- <button id="run" >Run</button> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class='chart-wrapper'>
+
+            <div id="image" class="chart-display">
+                <div class="show-element" id="chart-image">
+                    CHART WILL APPEAR HERE
+                </div>
+                <div id="chart-container" class="show-element">
+                    <div class="chartres">
+                        <canvas id="chart"></canvas>
+                    </div>
+
+                    <div id="seekShow">
+                        <div id="seek" style="width: 80%; height: 10%; text-align: center;" data-bs-toggle="popover"
+                            data-bs-placement="left" data-bs-trigger="click" title="Important!"
+                            data-bs-content="Considering the successive track seek time as 1ms.">
+                            <h4 id="temp"> </h4>
+                            <h4 id="temp1"> </h4>
+                        </div>
+                        <div id="download-buttons">
+                            <div id="dImageIcon"></div>
+                            <div id="dPDFIcon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+    <script src="Chart.min.js"></script>
+    <!-- <script src="search.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+    <script src="scan.js"></script>
+</body>

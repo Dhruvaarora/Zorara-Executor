@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head ><title>Disk Scheduling calculator</title>
+      <link rel="stylesheet" href="main.css" > 
+      <link rel = "icon" href = "schedule.png" 
+        type = "image/x-icon">
+    </head>
+
+    <body background="img1.jpg">
+      <div class="header">
+        <font face="fantasy" color="#f6e0b5" size="7"><center>Disk Scheduling calculator</center></font>
+        </div>
+        <div class="head">
+        <font color="white" size="6"><b>Select a calculator:</b></font><br>
+        </div>
+        <div class="main">
+        <div class="container">
+             <br><br><button class="btn" onclick="window.location.href='fcfs.html';"> <b>FCFS</b></button> <br><br>
+             <button class="btn" onclick="window.location.href='scan.html';" ><b> SCAN </b></button> <br><br>
+             <button class="btn" onclick="window.location.href='cscan.html';"><b>C-SCAN </b></button> <br><br>
+             <button class="btn" onclick="window.location.href='sstf.html';"><b> SSTF </b></button> <br><br>
+             <button class="btn" onclick="window.location.href='look.html';"><b> LOOK </b></button> <br><br>
+             <button class="btn" onclick="window.location.href='clook.html';"><b> C-LOOK</b> </button> <br><br>
+        </div>
+        </div>
+    <div class="calc"><!--grey box for abouts-->
+      </div>
+
+<!--paragraphs of headings-->
+      <div class="about1"><!-- about cpu's diversion -->
+        Requests are served<br> in the order that they arrived 
+      </div>
+      <div class="about2"><!-- about cpu's diversion -->
+        All requests arriving in<br>the path are addressed.<br>Head moves till the end
+      </div>
+      <div class="about3"><!-- about cpu's diversion -->
+        Similiar to that of SCAN.<br>Requests are addressed<br>when the head moves in a<br>single direction
+      </div>
+      <div class="about4"><!-- about cpu's diversion -->
+        Requests with lowest<br>seek time is executed<br>first 
+      </div>
+      <div class="about5"><!-- about cpu's diversion -->
+        Requests with lowest<br>seek time is executed<br>first 
+      </div>
+      <div class="about6"><!-- about cpu's diversion -->
+        Requests are served<br> in the order that they<br>arrived 
+      </div>
+
+<!--Inner calc headings -->
+        <div class="innercalc1">
+        <font size="7" color="#354c7c"><b>FCFS</b></font> 
+    </div>
+    <div class="innercalc2">
+      <font size="7" color="#354c7c"><b>SCAN</b></font> 
+  </div>
+  <div class="innercalc3">
+    <font size="7" color="#354c7c"><b>CSCAN</b></font> 
+</div>
+<div class="innercalc4">
+  <font size="7" color="#354c7c"><b>SSTF</b></font> 
+</div>
+<div class="innercalc5">
+  <font size="7" color="#354c7c"><b>LOOK</b></font> 
+</div>
+<div class="innercalc6">
+  <font size="7" color="#354c7c"><b>CLOOK</b></font> 
+</div>
+<div class="footer">
+ <font face="" color="white" size="2" ><center>Made by: Dhruva Arora</center></font>
+</div>
+    </body>
+</html>

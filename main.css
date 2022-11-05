@@ -1,0 +1,234 @@
+.main {
+    position: absolute;
+    top: 20%;
+    left:10%;
+    background-color: rgb(74, 136, 197, 0.65);
+    padding: 32px ;
+}
+ *{
+    margin: 0;
+    padding: 0;
+} 
+.header{
+    background-color: rgba(163,145,147,0.8);
+    margin-top: 0px;
+    padding: 8px;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 35px;
+    margin-top: 815px;
+    font-size: 36px;
+}
+.container .btn {            
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(85, 85, 85);
+    color: white;
+    font-size: 16px;
+    padding: 18px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 110px;   
+    
+    /* transition: transform .2s; */
+}
+.main{
+    box-shadow: 10px 10px 10px rgb(37, 37, 37);
+}
+
+.container .btn:hover {
+    background-color: black;  
+     /* padding: 20px 25px; */
+    transition: 0.4s ease-out; 
+    font-size: 18px;
+    border-radius: 20px ;
+    color: yellow;
+    box-shadow: 10px 10px 10px rgba(59, 59, 59, 0.527);
+}
+.calc{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+}
+
+.head{
+    position: absolute;
+    top: 14%;
+    left:10%;
+    padding: 8px ;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: 0px;
+    background-color: rgba(97, 44, 48, 0.8);
+    box-shadow: 10px 10px 10px rgb(43, 41, 41);
+}
+.calc{
+    position: absolute;
+    top: 14%;
+    left:28%;
+    background-color: rgba(89, 104, 84, 0.8);
+    
+    padding: 325px ;
+    padding-left: 650px;
+    padding-right: 650px;
+}  
+.innercalc1{
+    position: absolute;
+    top: 16%;
+    left:28.7%;
+    padding: 15px ;
+    padding-left: 38px;
+    padding-right: 32px;
+    background-color: tan;
+    border-radius: 4%;
+}
+.innercalc2{
+    position: absolute;
+    top: 16%;
+    left:39.1%;
+    padding: 15px ;
+    padding-left: 38px;
+    padding-right: 32px;
+    background-color: tan;
+    border-radius: 4%;
+
+    
+}
+.innercalc3{
+    position: absolute;
+    top: 16%;
+    left:50%;
+    padding: 15px ;
+    padding-left: 24.5px;
+    padding-right: 20px;
+    background-color: tan;
+    border-radius: 4%;
+}
+.innercalc4{
+    position: absolute;
+    top: 16%;
+    left:61.4%;
+    padding: 15px ;
+    padding-left: 38px;
+    padding-right: 32px;
+    background-color: tan;
+    border-radius: 4%;
+}
+.innercalc5{
+    position: absolute;
+    top: 16%;
+    left:71.5%;
+    padding: 15px ;
+    padding-left: 37px;
+    padding-right: 32px;
+    background-color: tan;
+    border-radius: 4%;
+}
+.innercalc6{
+    position: absolute;
+    top: 16%;
+    left:83.1%;
+    padding: 15px ;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: tan;
+    border-radius: 4%;
+}
+.about1{
+    position: absolute;
+    top: 26%;
+    left:28.7%;
+    padding: 230px;
+    height: 53px;
+    width: 132px;
+    text-align: center;
+    margin: auto;
+    padding-left: 32px;
+    padding-right: 28px;
+    background-color: rgb(233, 231, 217);
+    border-radius: 4%;
+    
+    
+}
+.about2{
+    position: absolute;
+    top: 26%;
+    left:39.1%;
+    padding: 230px ;
+    padding-left: 27px;
+    padding-right: 24px;
+    background-color: rgb(233, 231, 217);
+    border-radius: 4%;
+    text-align: center;
+
+}
+.about3{
+    position: absolute;
+    top: 26%;
+    left:50%;
+    padding: 221px ;
+    padding-left: 24.4px;
+    padding-right: 20.9px;
+    background-color: rgb(233, 231, 217);
+    border-radius: 4%;
+    text-align: center;
+
+}
+.about4{
+    position: absolute;
+    top: 26%;
+    left:61.4%;
+    padding: 230px ;
+    padding-left: 28px;
+    padding-right: 24px;
+    background-color: rgb(233, 231, 217);
+    border-radius: 4%;
+    text-align: center;
+
+    }
+.about5{
+    position: absolute;
+    top: 26%;
+    left:71.54%;
+    padding: 230px ;
+    padding-left: 42px;
+    padding-right: 38px;
+    background-color: rgb(233, 231, 217);
+    border-radius: 4%;
+    text-align: center;
+
+}
+.about6{
+    position: absolute;
+    top: 26%;
+    left:83.2%;
+    padding: 230px ;
+    padding-left: 47px;
+    padding-right: 47px;
+    background-color: rgb(233, 231, 217);
+    border-radius: 4%;
+    text-align: center;
+
+ }
+
+th, td {
+border-style:solid;
+border-color: #96D4D4;
+font-size: 40px;
+}
+body{
+    background:
+           /* top, transparent black, faked with gradient */ 
+           linear-gradient(
+             rgba(0, 0, 0, 0.5), 
+             rgba(0, 0, 0, 0.5)
+           ),
+           /* bottom, image */
+           url("img1.jpg")
+}
+
+.about1{
+
+}
