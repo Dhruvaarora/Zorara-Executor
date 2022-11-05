@@ -118,6 +118,8 @@ form{
   width: 90%;
   height: 75%;
   transition: all 0.5s ease;
+  background-color: #fff;
+  border-radius: 5%;
 }
 
 #chart-image {
